@@ -66,7 +66,7 @@ rollBtn.addEventListener('click', function () {
         dice.src = `./images/dice-${diceNo}.png`
 
         if (diceNo !== 1) {
-            currentScore[activePlayer] += diceNo;
+            currentScore[activePlayer] = diceNo;
             score[activePlayer] += diceNo;
             document.getElementById(`current-${activePlayer + 1}`).textContent =
                 currentScore[activePlayer];
@@ -92,8 +92,6 @@ rollBtn.addEventListener('click', function () {
 holdBtn.addEventListener('click', function () {
     if (playGame) {
         currentScore[activePlayer] = 0;
-        document.getElementById(`current-${activePlayer + 1}`).textContent =
-            currentScore[activePlayer];
         switchPlayer();
     }
 });
