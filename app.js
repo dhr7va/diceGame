@@ -28,7 +28,7 @@ const intialize = function () {
     player1.classList.remove("player-winner");
     player2.classList.remove("player-winner");
     player1.classList.add("player-active");
-    player2.classList.remove("player-winner");
+    player2.classList.remove("player-active");
     current1.textContent = 0;
     current2.textContent = 0;
 
